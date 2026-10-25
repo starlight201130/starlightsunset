@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>starlightsunset ♡</title>
+  <style>
+    :root {
+      --pink: #fbe5ee;
+      --light: #fff8fb;
+      --berry: #94516f;
+      --text: #704d60;
+      --border: #edc9d9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--light);
+      color: var(--text);
+      font-family: Georgia, serif;
+      line-height: 1.7;
+    }
+
+    header, main, footer {
+      width: min(900px, 92%);
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 42px 0 20px;
+    }
+
+    h1 {
+      color: var(--berry);
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      margin: 0;
+    }
+
+    .tagline { font-style: italic; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 9px;
+      margin-top: 24px;
+    }
+
+    nav a, .button {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--berry);
+      border: 1px solid var(--border);
+      background: white;
+      border-radius: 30px;
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+
+    nav a:hover, .button:hover {
+      background: var(--pink);
+    }
+
+    .hero, .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 25px;
+      margin-bottom: 18px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #fbe5ee, #fff8fb);
+      text-align: center;
+      padding: 48px 24px;
+    }
+
+    h2, h3 { color: var(--berry); }
+
+    section { scroll-margin-top: 20px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit, minmax(min(100%, 220px), 1fr)
+      );
+      gap: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin: 5px 0 14px;
+      font: inherit;
+    }
+
+    textarea { min-height: 100px; }
+
+    footer {
+      text-align: center;
+      padding: 25px 0;
+      color: #a17c90;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>starlightsunset ♡</h1>
+    <p class="tagline">
+      little stories, big feelings & endless imagination 🎀
+    </p>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#blog">Blog</a>
+      <a href="#stories">Stories</a>
+      <a href="#ocs">My OCs</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#guestbook">Guestbook</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p>୨୧ WELCOME TO MY LITTLE UNIVERSE ୨୧</p>
+      <h2>A world stitched together with starlight.</h2>
+      <p>
+        A cozy corner of the internet for my thoughts,
+        fictional worlds, original characters and art.
+        Make yourself comfy. ♡
+      </p>
+      <a class="button" href="#stories">Explore my stories ✧</a>
+    </section>
+
+    <section id="blog">
+      <h2>♡ Little blog notes</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Welcome to my diary</h3>
+          <p>
+            This is my little online journal!
+            I'll share creative updates, ideas and
+            snippets of everyday life here.
+          </p>
+          <small>First post · Creative diary</small>
+        </article>
+        <article class="card">
+          <h3>Currently creating…</h3>
+          <p>
+            What story am I writing? Which character
+            is occupying my brain today? Find out here.
+          </p>
+          <small>Writing updates</small>
+        </article>
+      </div>
+    </section>
+
+    <section id="stories">
+      <h2>✧ The story nook</h2>
+      <article class="card">
+        <h3>The girl who collected sunsets</h3>
+        <p>
+          Every evening, Mira watched the sky turn
+          rose-pink and gold. She believed every sunset
+          held a secret. One evening, the sky answered.
+        </p>
+        <p><em>Replace this sample with your own story!</em></p>
+      </article>
+    </section>
+
+    <section id="ocs">
+      <h2>୨୧ My OC archive</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Character File 001</h3>
+          <p><strong>Name:</strong> Your character's name</p>
+          <p><strong>Personality:</strong> Add their traits.</p>
+          <p><strong>Backstory:</strong> Tell their story.</p>
+        </article>
+        <article class="card">
+          <h3>Character File 002</h3>
+          <p><strong>Name:</strong> Another OC</p>
+          <p><strong>Abilities:</strong> Their special skills.</p>
+          <p><strong>Secrets:</strong> The interesting lore!</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>✿ My little gallery</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>🎀 Artwork</h3>
+          <p>Add your drawings and illustrations here.</p>
+        </article>
+        <article class="card">
+          <h3>🌸 Moodboards</h3>
+          <p>Share your favourite creative aesthetics.</p>
+        </article>
+        <article class="card">
+          <h3>✨ Edits</h3>
+          <p>Showcase your original designs and edits.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="guestbook">
+      <h2>♡ Leave a little note</h2>
+      <div class="card">
+        <p>
+          This demo guestbook displays messages in the
+          current browser only. It does not publish or
+          permanently save comments.
+        </p>
+        <form id="comment-form">
+          <label for="nickname">Nickname</label>
+          <input id="nickname" maxlength="35"
+                 placeholder="A little nickname" required>
+
+          <label for="message">Your message</label>
+          <textarea id="message" maxlength="500"
+                    placeholder="Leave a kind note…"
+                    required></textarea>
+
+          <button class="button" type="submit">
+            Add note ♡
+          </button>
+        </form>
+        <div id="comments" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Made with imagination & a little starlight ♡
+  </footer>
+
+  <script>
+    const form = document.getElementById("comment-form");
+    const comments = document.getElementById("comments");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nickname =
+        document.getElementById("nickname").value.trim();
+      const message =
+        document.getElementById("message").value.trim();
+
+      if (!nickname || !message) return;
+
+      const card = document.createElement("article");
+      card.className = "card";
+
+      const heading = document.createElement("strong");
+      heading.textContent = nickname + " wrote:";
+
+      const paragraph = document.createElement("p");
+      paragraph.textContent = message;
+
+      card.append(heading, paragraph);
+      comments.prepend(card);
+      form.reset();
+    });
+  </script>
+</body>
+</html>
